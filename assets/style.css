@@ -8,6 +8,14 @@
   color: white;
 }
 
+body{
+background: rgb(76,52,229);
+background: -moz-linear-gradient(169deg, rgba(76,52,229,1) 0%, rgba(9,186,162,1) 60%, rgba(6,193,159,1) 100%);
+background: -webkit-linear-gradient(169deg, rgba(76,52,229,1) 0%, rgba(9,186,162,1) 60%, rgba(6,193,159,1) 100%);
+background: linear-gradient(169deg, rgba(76,52,229,1) 0%, rgba(9,186,162,1) 60%, rgba(6,193,159,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c34e5",endColorstr="#06c19f",GradientType=1);
+}
+
 .calculator {
   width: 375px;
   height: 568px;
@@ -17,18 +25,19 @@
   padding: 20px;
 }
 
-p {
+input {
   background-color: #303136;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 48px !important;
   line-height: 72px;
+  height: 88px;
   grid-column: 1/5;
   grid-row: 1/2;
-  display: grid;
   text-align: right;
-  align-items: end;
   border-radius: .75rem !important;
-  padding: .5rem;
+  outline: none;
+  border: none;
+  padding-right: .5rem;
 }
 
 button {
